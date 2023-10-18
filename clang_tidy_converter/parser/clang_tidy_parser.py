@@ -50,7 +50,7 @@ class ClangTidyParser:
                 continue
             message = self._parse_message(line)
             if message is None or message.level == ClangMessage.Level.UNKNOWN:
-                messages[-1].details_lines.append(line)
+                continue
             else:
                 messages.append(message)
         return self._group_messages(messages)
