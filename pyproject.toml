@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "clang-tidy-converter"
+version = "0.1.0"
+description = "Python3 script to convert Clang-Tidy output to different formats. Supported formats are Code Climate JSON and HTML report similar to scan-build utility."
+authors = ["yuriisk"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
